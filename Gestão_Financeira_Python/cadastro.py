@@ -1,20 +1,27 @@
-class Receita:
+class Operacao:
 
-    def __init__(self):
-        nome_receita = input('Digite o titulo da Receita: ')
+    def __init__(self): 
+        # operacao pode ser receita ou despesa
+        tipo_op = int(input('Qual tipo de operação deseja fazer?\n1 - Receita  2 - Despesa'))
+        if tipo_op == 1:
+            self.operacao = 'Receita'
+        elif tipo_op == 2:
+            self.operacao = 'Despesa'
+        
+        #informações da operação 
+        nome_operacao = input(f'Digite o titulo da {self.operacao}: ')
         while True:
             try:
-                valor_receita = float(input('Digite o valor da Receita: '))
-                data_receita = input('informe a data da operação com o formato (DD/MM/AA): ')
-                self.nome_receita = nome_receita
-                self.valor_receita = valor_receita
-                self.data_receita = data_receita
+                valor_operacao = float(input(f'Digite o valor da {self.operacao}: '))
+                data_operacao = input(f'informe a data da {self.operacao} com o formato (DD/MM/AA): ')
+                self.nome_operacao = nome_operacao
+                self.valor_operacao = valor_operacao
+                self.data_operacao = data_operacao
                 break
             except:
                 print('Por favor, informe corretamente')
                 
 
-    def salvar_receita(self):
+    def salvar_operacao(self):
         """- Retorna as informações do objeto para que sejam salvas em um arquivo txt"""
-        return f"{self.data_receita} {self.nome_receita} {self.valor_receita}\n"
-    
+        return f"{self.data_operacao} {self.nome_operacao} {self.valor_operacao} {self.operacao}\n"
