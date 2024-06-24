@@ -10,6 +10,8 @@ class Operacao:
         
         #informações da operação 
         nome_operacao = input(f'Digite o titulo da {self.operacao}: ')
+        if nome_operacao == '':
+            nome_operacao = self.operacao
         while True:
             try:
                 valor_operacao = float(input(f'Digite o valor da {self.operacao}: '))
