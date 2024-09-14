@@ -1,0 +1,24 @@
+# inputs
+    linhas: 7 - 18
+    - pegar o nome da renda e o valor da renda(list)
+      usando um while True para por numa lista, dentro de um try except para caso o 
+      usuario erre a informação
+    ex: salario : 500 (nome_renda, valor_renda)
+
+    linhas: 22 - 39
+    - pegar o nome da despesa que precisa dividir a renda e a porcentagem alocada(dict)
+      usando um try except dentro de um while True para colocar as informações dentro dentro
+      dicionario e retornar caso o usuario erre uma informação
+    ex: contas : 50 (nome_despesa, porcentagem_despesa)
+        estudo : 50 (nome_despesa, porcentagem_despesa)
+
+# processamento
+    linhas: 42 - 45
+    - pegar a lista com o nomes e os valores das rendas, para usar um for 
+      e somar cada valor de renda 
+    
+# outputs
+    linhas: 48 - 50
+    - mostrar a divisao da renda em cada categoria e a porcentagem, dentro de um for
+    ex: contas : R$250 (50%)
+        estudo : R$250 (50%)
