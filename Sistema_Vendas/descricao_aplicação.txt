@@ -1,0 +1,12 @@
+Qual o objetivo da aplicação?
+- Criar um sistema de vendas com cadastro de produtos e clientes
+
+Plano de ação:
+- Cadastro de produtos(codigo_produto, nome_produto, marca_produto, tipo_produto, preços_produto, quantidade_produto)
+- Leitura, edição e exclusão de produtos
+- Venda de produtos(codigo_venda, codigos_produtos_venda, qtd_produtos_venda, valor_total_venda, metodo_pagamento, status_venda)
+- Leitura, edição e exclusão de produtos
+- Fechamento de caixa das vendas
+- Cadastro clientes(codigo_cliente, nome_cliente, email_cliente, numero_cliente, crédito_cliente)
+- Leitura, edição e exclusão de clientes
+- GUI do sistema
